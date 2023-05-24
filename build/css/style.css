@@ -1,0 +1,1912 @@
+@charset "UTF-8";
+/*
+  System font stack used as base sans-serif and monospace
+  https://css-tricks.com/snippets/css/system-font-stack/
+*/
+/*
+  Themes fonts
+*/
+/*
+* Breakpoints
+*/
+/*
+* Colors
+*/
+/*
+  Import vendor libraries
+*/
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+  ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/*  Sections
+    ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/*  Grouping content
+    ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/*  Text-level semantics
+    ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*  Embedded content
+    ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/*  Forms
+    ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/*  Interactive
+    ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/*  Misc
+    ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+/*
+  Import utils classes and base styles
+*/
+.u-svg-wrapper {
+  display: none;
+}
+
+.u-hidden {
+  display: none !important;
+}
+
+.u-visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
+
+.u-invisible {
+  visibility: hidden;
+}
+
+html {
+  box-sizing: border-box;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  background-color: #ffffff;
+  font-family: "Open Sans";
+  height: 100%;
+  margin: 0;
+  min-height: 100%;
+}
+
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.undotted {
+  list-style-type: none;
+}
+
+label {
+  cursor: pointer;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+h2, h1 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.title-hidden {
+  visibility: hidden;
+  max-width: 0;
+  max-height: 0;
+}
+
+.title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  color: #1E0606;
+}
+
+.btn {
+  background-color: #000;
+  color: white;
+  font-size: 16px;
+  line-height: 22px;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  padding: 9px 22px;
+}
+
+.blog {
+  margin-left: 110px;
+  margin-top: 60px;
+}
+
+.blog__name {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+  color: #1E0606;
+}
+
+.blog__page {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.blog__pages {
+  font-family: "Crimson Text";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.blog__page__items {
+  color: #1E0606;
+}
+
+.blog__page__vector {
+  background-image: url(../img/icon/vector.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 10px;
+  height: 12px;
+  padding-left: 40px;
+  width: 8px;
+}
+
+.blog__items__first {
+  display: flex;
+  margin-top: 50px;
+}
+
+.blog__items__second {
+  display: flex;
+  margin-top: 30px;
+}
+
+.blog__leaf {
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+.blog__leaf__items {
+  display: flex;
+}
+
+.blog__leaf__left {
+  margin-right: 457px;
+}
+
+.blog__leaf__right {
+  margin-left: 457px;
+}
+
+.blog__leaf__button__left {
+  background-image: url(../img/icon/Vector3.svg);
+  background-position: center;
+  background-color: #fff;
+  border: none;
+  width: 13px;
+  height: 26px;
+}
+
+.blog__leaf__page-active {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.blog__leaf__page {
+  padding-left: 67px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.blog__leaf__link-active {
+  color: #C29974;
+}
+
+.blog__leaf__link {
+  color: #1E0606;
+}
+
+.blog__leaf__button__right {
+  background-image: url(../img/icon/Vector4.svg);
+  background-position: center;
+  background-color: #fff;
+  border: none;
+  width: 13px;
+  height: 26px;
+}
+
+.category {
+  margin-left: 110px;
+  margin-bottom: 55px;
+  margin-top: 60px;
+}
+
+.category__name {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+  color: #1E0606;
+}
+
+.category__page {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.category__pages {
+  font-family: "Crimson Text";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.category__page__items {
+  color: #1E0606;
+}
+
+.category__page__vector {
+  background-image: url(../img/icon/vector.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 10px;
+  height: 12px;
+  padding-left: 40px;
+  width: 8px;
+}
+
+.product__items__first {
+  display: flex;
+  margin-top: 50px;
+}
+
+.product__items__second {
+  margin-top: 23px;
+  margin-left: 200px;
+  display: flex;
+}
+
+.category__last {
+  margin-top: 50px;
+  margin-left: 200px;
+}
+
+.category__text__info {
+  padding-top: 25px;
+}
+
+.category__text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1E0606;
+}
+
+.category__text__first {
+  width: 680px;
+  height: 44px;
+}
+
+.category__text__second {
+  padding-top: 15px;
+  width: 680px;
+  height: 44px;
+}
+
+.category__text__third {
+  padding-top: 15px;
+  width: 680px;
+  height: 66px;
+}
+
+.contact {
+  margin-left: 110px;
+  display: flex;
+}
+
+.contact__name {
+  margin-top: 60px;
+  margin-left: 110px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+  color: #1E0606;
+}
+
+.contact__page {
+  margin-left: 110px;
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.contact__pages {
+  font-family: "Crimson Text";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.contact__page__items {
+  color: #1E0606;
+}
+
+.contact__page__vector {
+  background-image: url(../img/icon/vector.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 10px;
+  height: 12px;
+  padding-left: 40px;
+  width: 8px;
+}
+
+.form {
+  margin-top: 50px;
+  margin-bottom: 60px;
+  padding-left: 40px;
+  background-color: #E5EAF8;
+  width: 640px;
+  height: 542px;
+}
+
+.form__items {
+  padding-top: 42px;
+  display: grid;
+}
+
+.form__items__name {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #1E0606;
+  line-height: 19px;
+}
+
+.form__items__name__field {
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  width: 580px;
+  height: 50px;
+  padding-left: 20px;
+}
+
+.form__items__second {
+  display: flex;
+}
+
+.form__items__field {
+  padding-top: 20px;
+  display: grid;
+}
+
+.form__items__field__second {
+  padding-top: 20px;
+  padding-left: 20px;
+  display: grid;
+}
+
+.form__items__phone__field {
+  margin-top: 3px;
+  width: 290px;
+  height: 50px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.form__items__email__field {
+  margin-top: 3px;
+  width: 290px;
+  height: 50px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.form__items__message__field {
+  margin-top: 3px;
+  width: 600px;
+  height: 150px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.form__checkbox {
+  padding-top: 20px;
+  margin-bottom: 15px;
+}
+
+.form__checkbox__input {
+  width: 19px;
+  height: 19px;
+}
+
+.form__checkbox__text {
+  padding-left: 10px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #1E0606;
+}
+
+.contact__info {
+  margin-top: 50px;
+  padding-left: 120px;
+  width: 380px;
+}
+
+.contact__info__text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1E0606;
+}
+
+.contact__info__text__second {
+  margin-top: 20px;
+}
+
+.contact__info__subtitle {
+  padding-top: 20px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 34px;
+  color: #C29974;
+}
+
+.toys {
+  margin-left: 110px;
+  margin-top: 60px;
+}
+
+.toys__name {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+  color: #1E0606;
+}
+
+.toys__page {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.toys__pages {
+  font-family: "Crimson Text";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.toys__page__items {
+  color: #1E0606;
+}
+
+.toys__page__vector {
+  background-image: url(../img/icon/vector.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 10px;
+  height: 12px;
+  padding-left: 40px;
+  width: 8px;
+}
+
+.toys__leaf {
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+.toys__leaf__items {
+  display: flex;
+}
+
+.toys__leaf__left {
+  margin-right: 457px;
+}
+
+.toys__leaf__right {
+  margin-left: 457px;
+}
+
+.toys__leaf__button__left {
+  background-image: url(../img/icon/Vector3.svg);
+  background-position: center;
+  background-color: #fff;
+  border: none;
+  width: 13px;
+  height: 26px;
+}
+
+.toys__leaf__page-active {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.toys__leaf__page {
+  padding-left: 67px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.toys__leaf__link-active {
+  color: #C29974;
+}
+
+.toys__leaf__link {
+  color: #1E0606;
+}
+
+.toys__leaf__button__right {
+  background-image: url(../img/icon/Vector4.svg);
+  background-position: center;
+  background-color: #fff;
+  border: none;
+  width: 13px;
+  height: 26px;
+}
+
+.toys__filter {
+  margin-top: 50px;
+  background: rgba(125, 151, 218, 0.2);
+  width: 1400px;
+  height: 254px;
+}
+
+.filter {
+  padding-left: 110px;
+  padding-top: 42px;
+  display: flex;
+}
+
+.filter__cost__name {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  padding-bottom: 25px;
+}
+
+.filter__cost__slider {
+  display: grid;
+  justify-content: center;
+}
+
+.filter__cost__input {
+  width: 188px;
+  height: 4px;
+}
+
+.filter__cost__number {
+  padding-top: 16px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1E0606;
+  word-spacing: 166px;
+}
+
+.filter__color {
+  margin-left: 94px;
+}
+
+.filter__color__name {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1E0606;
+  padding-bottom: 15px;
+}
+
+.filter__color__input {
+  width: 19px;
+  height: 19px;
+  background: #FFFFFF;
+  border: 2px solid #C29974;
+  border-radius: 3px;
+  margin-bottom: 18px;
+}
+
+.filter__color__type {
+  margin-top: -5px;
+  padding-left: 5px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1E0606;
+}
+
+.filter__delivery {
+  margin-left: 125px;
+}
+
+.filter__delivery__name {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1E0606;
+  padding-bottom: 16px;
+}
+
+.filter__delivery__input {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #C29974;
+  border-radius: 3px;
+  padding-bottom: 12px;
+}
+
+.filter__delivery__type {
+  padding-left: 6px;
+}
+
+.filter__amount {
+  padding-left: 70px;
+}
+
+.filter__amount__name {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1E0606;
+  padding-bottom: 15px;
+}
+
+.filter__amount__list {
+  display: flex;
+  width: 240px;
+  height: 35px;
+}
+
+.filter__amount__type {
+  background-color: #fff;
+}
+
+.filter__amount__type-cheked {
+  background-color: #F3D0DB;
+}
+
+.filter__button {
+  margin-left: 60px;
+  margin-top: 30px;
+}
+
+.toys__choice {
+  margin-left: 110px;
+  margin-top: 60px;
+}
+
+/*
+  Import all other blocks
+*/
+.header {
+  display: flex;
+  margin-top: 50px;
+  align-items: center;
+  margin-left: 110px;
+}
+
+.header__nav {
+  padding-left: 35px;
+  padding-bottom: 5px;
+}
+
+.header__list {
+  display: flex;
+  height: 20px;
+  left: 216px;
+  top: 16px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 19px;
+}
+
+.header__contact {
+  padding-left: 650px;
+}
+
+.header__contact-item {
+  font-weight: 700;
+  font-size: 14px;
+  color: #1E0606;
+  padding-left: 24px;
+}
+
+.header__logo {
+  padding-right: 25px;
+}
+
+.header__list-link {
+  font-size: 16px;
+  line-height: 20px;
+  color: #1E0606;
+  padding-right: 15px;
+}
+
+.footer {
+  background-color: #434343;
+  padding-bottom: 100px;
+}
+
+.footer__container {
+  padding-left: 110px;
+  padding-top: 100px;
+  display: flex;
+}
+
+.footer__link {
+  color: #ffffff;
+}
+
+.name-block {
+  color: #AAAAAA;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.footer__column1 {
+  padding-top: 23px;
+  line-height: 22px;
+}
+
+.footer__column1-items {
+  padding-top: 28px;
+}
+
+.footer__column-items {
+  padding-top: 15px;
+}
+
+.footer__blocks-second {
+  padding-left: 20px;
+}
+
+.footer__blocks-third {
+  padding-left: 20px;
+}
+
+.footer__email {
+  background-color: #666;
+  border: none;
+  height: 40px;
+  width: 299px;
+}
+
+.footer__under {
+  margin-top: 28px;
+  margin-left: 110px;
+  border-top: 1px solid #666666;
+  width: 1180px;
+}
+
+.footer__under__box {
+  margin-top: 23px;
+  display: flex;
+}
+
+.footer__button {
+  margin-left: -5px;
+  padding-top: -1px;
+  width: 81px;
+  height: 40px;
+}
+
+.footer_awards {
+  padding-top: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.footer_awards__item {
+  align-items: center;
+  background-color: #666;
+  border-radius: 15px;
+  display: inline-flex;
+  height: 30px;
+  justify-content: center;
+  width: 30px;
+}
+
+.footer__rating__group {
+  color: #ffffff;
+  display: flex;
+}
+
+.footer__rating {
+  align-items: center;
+  display: flex;
+  flex-direction: row-reverse;
+  height: 16px;
+  align-items: center;
+}
+
+.footer__star {
+  padding-left: 25px;
+}
+
+.rating__star {
+  display: none;
+  margin: 0;
+  position: absolute;
+}
+
+.label-rating {
+  background-image: url(../img/icon/star.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 15px 13px;
+  margin-top: 3px;
+  margin-right: 5px;
+  padding-right: 15px;
+}
+
+.footer__under-info {
+  padding-left: 154px;
+  color: #ffffff;
+}
+
+.footer__under-info-link {
+  color: #A2A2A2;
+  padding-left: 154px;
+}
+
+.blog {
+  margin-left: 110px;
+  margin-top: 60px;
+}
+.blog__item {
+  max-width: 380px;
+}
+.blog__column {
+  padding-left: 20px;
+}
+.blog__items__date {
+  padding-top: 20px;
+  margin-bottom: 7px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #818181;
+}
+.blog__items__link {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  color: #1E0606;
+}
+.blog__items__text {
+  padding-top: 15px;
+  color: #1E0606;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.product__items {
+  width: 280px;
+  height: 270px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+.product__items__one {
+  background-color: #DBE4DB;
+  background-image: url(../img/pullover.jpg);
+}
+.product__items__two {
+  margin-left: 20px;
+  background-color: #EADDD3;
+  background-image: url(../img/sock.png);
+}
+.product__items__three {
+  margin-left: 20px;
+  background-color: #F8F2DA;
+  background-image: url(../img/toys.png);
+}
+.product__items__four {
+  background-color: #D5D4E1;
+  background-image: url(../img/monkey.png);
+}
+.product__items__five {
+  background-color: #F3D0DB;
+  background-image: url(../img/flamingos.png);
+  margin-left: 20px;
+}
+.product__items__six {
+  background-color: #E5EAF8;
+  background-image: url(../img/dress.png);
+  margin-left: 20px;
+}
+
+.product__link {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  color: #fff;
+  text-align: center;
+}
+.product__link__one {
+  position: absolute;
+  left: 75px;
+  top: 103px;
+  width: 129px;
+}
+.product__link__two {
+  width: 155px;
+  left: 62px;
+  top: 103px;
+  position: relative;
+}
+.product__link__three {
+  left: 104px;
+  top: 119px;
+  position: relative;
+}
+.product__link__four {
+  left: 44px;
+  top: 119px;
+  position: relative;
+}
+.product__link__five {
+  left: 105px;
+  top: 119px;
+  position: relative;
+}
+.product__link__six {
+  left: 62px;
+  top: 103px;
+  width: 100px;
+  position: relative;
+}
+
+.toys__choice__item {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 47px;
+  row-gap: 20px;
+}
+.toys__choice__text {
+  padding-top: 30px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: #1E0606;
+  display: block;
+}
+.toys__choice__price {
+  padding-top: 15px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #1E0606;
+  display: block;
+}
+
+.pages {
+  font-family: "Crimson Text";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.page__items {
+  color: #1E0606;
+}
+
+.page__vector {
+  background-image: url(../img/icon/vector.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 10px;
+  height: 12px;
+  padding-left: 40px;
+  width: 8px;
+}
+
+.product__items {
+  width: 280px;
+  height: 270px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+.product__items__one {
+  background-color: #DBE4DB;
+  background-image: url(../img/pullover.jpg);
+}
+.product__items__two {
+  margin-left: 20px;
+  background-color: #EADDD3;
+  background-image: url(../img/sock.png);
+}
+.product__items__three {
+  margin-left: 20px;
+  background-color: #F8F2DA;
+  background-image: url(../img/toys.png);
+}
+.product__items__four {
+  margin-left: 20px;
+  background-color: #D5D4E1;
+  background-image: url(../img/monkey.png);
+}
+
+.product__link {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  color: #fff;
+  text-align: center;
+}
+.product__link__one {
+  position: absolute;
+  left: 75px;
+  top: 103px;
+  width: 129px;
+}
+.product__link__two {
+  width: 155px;
+  left: 62px;
+  top: 103px;
+  position: relative;
+}
+.product__link__three {
+  left: 104px;
+  top: 119px;
+  position: relative;
+}
+.product__link__four {
+  left: 44px;
+  top: 119px;
+  position: relative;
+}
+
+/*
+  Ниже пример подключения других блоков
+
+  Каждый новый файл должен отвечать за конкретный блок в терминах БЭМ
+  (https://ru.bem.info/methodology/key-concepts/#%D0%B1%D0%BB%D0%BE%D0%BA)
+
+  Для именования селекторов давайте придерживаться стиля two dashes
+  (https://ru.bem.info/methodology/naming-convention/#%D1%81%D1%82%D0%B8%D0%BB%D1%8C-two-dashes)
+  block-name__element-name--modificator
+*/
+/*
+  Код ниже нужно удалить, он добавлен просто для примера
+  Не стал выносить в отдельный файл, но если бы блок coming-soon действительно был бы нужен,
+  то он должен был бы быть в файле _blocks/coming-soon.scss
+*/
+.banner {
+  background-color: #EEE4DB;
+  display: flex;
+  width: 1180px;
+  margin-left: 110px;
+  margin-top: 130px;
+  margin-bottom: 90px;
+  flex-wrap: wrap;
+}
+
+.banner__info {
+  padding-left: 28px;
+  padding-top: 17px;
+}
+
+.banner__switch__number {
+  color: rgba(30, 6, 6, 0.05);
+  font-family: "Montserrat";
+  font-size: 60px;
+}
+
+.banner__switch {
+  padding-left: 3px;
+}
+
+.banner-page__item-btn {
+  background: #d6cac2;
+  border: none;
+  height: 3px;
+  width: 31px;
+}
+
+.banner__switch__active {
+  background: rgba(30, 6, 6, 0.6);
+}
+
+.banner-page__item {
+  height: 3px;
+  padding-bottom: 11px;
+  width: 31px;
+}
+
+.banner__inscription {
+  padding-left: 44px;
+  padding-top: 90px;
+  flex-direction: column;
+}
+
+.banner__inscription__title {
+  color: #1e0606;
+  font-family: "Montserrat";
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0;
+  width: 400px;
+}
+
+.banner__inscription__subtitle {
+  padding-top: 15px;
+  font-family: "Crimson Text";
+  font-size: 20px;
+  color: #1E0606;
+}
+
+.banner__button {
+  padding-top: 20px;
+}
+
+.banner__btn {
+  font: "Open Sans";
+  font-weight: "700";
+  margin-bottom: 90px;
+}
+
+.banner__text {
+  background-color: #C29974;
+  margin-top: 90px;
+  color: white;
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+
+.banner__img {
+  position: absolute;
+  margin-left: 445px;
+  margin-top: -86px;
+}
+
+.product {
+  margin-left: 110px;
+  margin-top: 90px;
+}
+
+.product__name {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  color: #1E0606;
+}
+
+.product__items__main {
+  display: flex;
+  margin-top: 30px;
+}
+
+.product__items1 {
+  width: 280px;
+  height: 270px;
+  background-color: #DBE4DB;
+  background-image: url(../img/pullover.jpg);
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.product__items__link1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  color: #fff;
+  text-align: center;
+}
+
+.product__link1 {
+  position: absolute;
+  left: 75px;
+  top: 103px;
+  width: 129px;
+}
+
+.product__items2 {
+  margin-left: 20px;
+  background-color: #EADDD3;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../img/sock.png);
+  width: 280px;
+  height: 270px;
+}
+
+.product__items__link2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  color: #fff;
+  text-align: center;
+}
+
+.product__link2 {
+  width: 155px;
+  left: 62px;
+  top: 103px;
+  position: relative;
+}
+
+.product__items3 {
+  margin-left: 20px;
+  background-color: #F8F2DA;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../img/toys.png);
+  width: 280px;
+  height: 270px;
+}
+
+.product__items__link3 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  color: #fff;
+  text-align: center;
+}
+
+.product__link3 {
+  left: 104px;
+  top: 119px;
+  position: relative;
+}
+
+.product__items4 {
+  margin-left: 20px;
+  background-color: #D5D4E1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../img/monkey.png);
+  width: 280px;
+  height: 270px;
+}
+
+.product__items__link4 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  color: #fff;
+  text-align: center;
+}
+
+.product__link4 {
+  position: absolute;
+  left: 44px;
+  top: 119px;
+  position: relative;
+}
+
+.vector {
+  display: flex;
+}
+
+.vector__left {
+  margin-top: 33px;
+  width: 37px;
+  height: 37px;
+  background: rgba(112, 187, 220, 0.2);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../img/icon/Vector1.svg);
+  border: none;
+}
+
+.vector__right {
+  margin-top: 33px;
+  margin-left: 6px;
+  width: 37px;
+  height: 37px;
+  background: rgba(112, 187, 220, 0.2);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../img/icon/Vector2.svg);
+  border: none;
+}
+
+.vector__txt {
+  padding-left: 20px;
+  color: #1e0606;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  padding-top: 30px;
+  width: 580px;
+}
+
+.delivery {
+  margin-top: 94px;
+  margin-left: 110px;
+  display: flex;
+}
+
+.delivery__block {
+  display: flex;
+  flex-direction: column;
+  padding-left: 60px;
+  padding-top: 30px;
+}
+
+.delivery__name {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+  padding-left: 61px;
+  color: #1E0606;
+}
+
+.delivery__info {
+  padding-top: 6px;
+}
+
+.delivery__list {
+  font-family: "Crimson Text";
+  font-weight: 700;
+  font-size: 26px;
+}
+
+.delivery__link__one {
+  width: 326px;
+  height: 55px;
+  background: rgba(112, 187, 220, 0.2);
+}
+
+.delivery__link__two {
+  padding-top: 10px;
+}
+
+.delivery__link__three {
+  padding-top: 22px;
+}
+
+.delivery__list__link__one {
+  padding-left: 60px;
+  padding-top: 11px;
+  color: #1E0606;
+}
+
+.delivery__list__link__two {
+  padding-left: 60px;
+  color: #1E0606;
+}
+
+.delivery__list__link__three {
+  padding-left: 60px;
+  color: #1E0606;
+}
+
+.delivery__text {
+  padding-left: 60px;
+  padding-top: 35px;
+}
+
+.delivery__text__one {
+  width: 480px;
+  height: 66px;
+  color: #1E0606;
+}
+
+.delivery__text__two {
+  padding-top: 15px;
+  width: 480px;
+  height: 88px;
+  color: #1E0606;
+}
+
+.delivery__button {
+  margin-left: 60px;
+  margin-top: 26px;
+}
+
+.icon {
+  margin-left: 110px;
+  margin-top: 60px;
+}
+
+.icon__name {
+  visibility: hidden;
+}
+
+.icon__all {
+  display: flex;
+  align-items: center;
+}
+
+.icon__a {
+  padding-left: 127px;
+}
+
+.icon__e {
+  padding-left: 127px;
+}
+
+.icon__o {
+  padding-left: 127px;
+}
+
+.info {
+  display: flex;
+  margin-left: 110px;
+}
+
+.aboutus {
+  background-color: #E1F0F7;
+  width: 515px;
+  height: 228px;
+  padding-left: 30px;
+  margin-top: 116px;
+  margin-bottom: 153px;
+}
+
+.aboutus__title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  color: #1E0606;
+  position: absolute;
+  margin-top: -25px;
+}
+
+.aboutus__subtitle {
+  font-family: "Crimson Text";
+  font-weight: 400;
+  font-size: 26px;
+  padding-top: 31px;
+  color: #1E0606;
+}
+
+.aboutus__text {
+  color: #1E0606;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  padding-top: 10px;
+  width: 483px;
+  height: 67px;
+}
+
+.aboutus__button {
+  margin-top: 15px;
+}
+
+.contacts {
+  margin-top: 112px;
+  margin-left: 57px;
+  background-color: #E1F0F7;
+  width: 510px;
+  height: 210px;
+  padding-left: 30px;
+}
+
+.contacts__title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  color: #1E0606;
+  position: absolute;
+  margin-top: -25px;
+}
+
+.contacts__text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  padding-top: 41px;
+}
+
+.map {
+  padding-top: 30px;
+  width: 483px;
+  height: 196px;
+}
